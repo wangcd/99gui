@@ -34,4 +34,15 @@ if ($this->_foreach['rs_childs']['total'] > 0):
 			}
 		);
 	});
+
+			$(function(){
+				$(".category_li,.idxban-left").hover(
+					function(){
+						$(".idxban-left").show();
+					},
+					function(){
+						$(".idxban-left").hide();
+					}
+				);			
+			});	
 </script>

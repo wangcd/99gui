@@ -12,6 +12,7 @@ a{
 .show_article_list{
 	margin:auto;
 	width:1200px;
+	margin-top:10px;
 }
 .article_list_bg{
 	width:1200px;

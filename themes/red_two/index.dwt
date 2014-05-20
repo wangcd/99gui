@@ -33,11 +33,15 @@
 <div class="wrap">
 	<div class="sitewith">
 		<div class="idxmid-left">
+
 			<!--站内公告 start-->
+<!--
 			<div class="noticbox box-border mt8">
 				{$shop_notice}  
 			</div>
+ -->           
 			<!--站内公告 end-->
+            
 			<!-- TemplateBeginEditable name="左边区域" -->
 <!-- #BeginLibraryItem "/library/ad_position.lbi" -->
 
@@ -60,147 +64,50 @@
 				</div>
 			</div>
 			<!-- {/if} -->
-<!-- #BeginLibraryItem "/library/top10.lbi" -->
-
-<!-- #EndLibraryItem -->
-            
+<!--销售排行-->           
 		</div>
 		<div class="idxmid-right">
-		<!-- TemplateBeginEditable name="右边区域" -->
-<!-- #BeginLibraryItem "/library/recommend_best.lbi" -->
+<script>
+$(function(){
+	$(".qh_title").mouseover(
+		function(){
+			$(".qh_box div").removeClass("qh_title2");
+			$(".qh_box div").addClass("qh_title1");
+			$(this).addClass("qh_title2");
+			$(".a0,.a1,.a2,.a3").css("display","none");
+			$(".a"+$(this).index()).css("display","block");
+		}
+	);
+})
+</script>
+           <div class="qh_box">
+                <div class="qh_title qh_title2">精品推荐</div>
+                <div class="qh_title qh_title1">本月热销</div>
+                <div class="qh_title qh_title1">新品上架</div>
+                <div class="qh_title qh_title1">限时抢购</div>
+            </div>        
+            <div class="qh_con">
+                <div style="width:100%; height:200px;" class="a0">
+                <!-- #BeginLibraryItem "/library/recommend_best.lbi" -->
 
-<!-- 精品推荐 -->
-<!-- {if $best_goods} -->
-	<!-- {if $cat_rec_sign neq 1} -->
-			<div class="right-box box-border mt8">
-				<div class="right-box-tit">
-					<h2>{$lang.best_goods}</h2>
-					<a class="tit_more" href="../search.php?intro=best">更多</a>
-				</div>
-				<div class="right-box-dl">
-					<ul class="goodslist">
-						<!--{foreach from=$best_goods item=goods}-->
-						<li>
-							<div class="gl-img">
-								<a href="{$goods.url}">
-									<b class="gl-water">精品</b>
-									<img style="border:none;" src="{$goods.thumb}" alt="{$goods.name|escape:html}">
-								</a>
-								<!--{if !empty($goods.brief)}-->
-								<div class="gl-abst-disc"><p>{$goods.brief}</p></div>
-								<!--{/if}-->
-							</div>
-							<div class="gl-name-p">
-								<div class="gl-name"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></div>
-								<div class="gl-price">
-									<span class="gl-p-l"><b>
-									<!-- {if $goods.promote_price neq ""} -->
-									{$goods.promote_price}
-									<!-- {else}-->
-									{$goods.shop_price}
-									<!--{/if}-->
-									</b></span>
-									<span class="gl-p-r"><del>{$goods.market_price}</del></span>
-								</div>
-							</div>
-						</li>
-						<!--{/foreach}-->
-					</ul>
-				</div>
-			</div>
-	<!-- {/if} -->
-<!-- {/if} -->
- <!-- #EndLibraryItem -->
-<!-- #BeginLibraryItem "/library/recommend_hot.lbi" -->
+<!-- #EndLibraryItem -->
+                </div>
+                <div style="width:100%; height:200px; display:none" class="a1">
+                <!-- #BeginLibraryItem "/library/recommend_hot.lbi" -->
 
-<!-- 热卖商品 -->
-<!-- {if $hot_goods} -->
-	<!-- {if $cat_rec_sign neq 1} -->
-			<div class="right-box box-border mt8">
-				<div class="right-box-tit">
-					<h2>{$lang.hot_goods}</h2>
-					<a class="tit_more" href="../search.php?intro=hot">更多</a>
-				</div>
-				<div class="right-box-dl">
-					<ul class="goodslist">
-						<!--{foreach from=$hot_goods item=goods}-->
-						<li>
-							<div class="gl-img">
-								<a href="{$goods.url}">
-									<b class="gl-water">热销</b>
-									<img style="border:none;" src="{$goods.thumb}" alt="{$goods.name|escape:html}">
-								</a>
-								<!--{if !empty($goods.brief)}-->
-								<div class="gl-abst-disc"><p>{$goods.brief}</p></div>
-								<!--{/if}-->
-							</div>
-							<div class="gl-name-p">
-								<div class="gl-name"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></div>
-								<div class="gl-price">
-									<span class="gl-p-l"><b>
-									<!-- {if $goods.promote_price neq ""} -->
-									{$goods.promote_price}
-									<!-- {else}-->
-									{$goods.shop_price}
-									<!--{/if}-->
-									</b></span>
-									<span class="gl-p-r"><del>{$goods.market_price}</del></span>
-								</div>
-							</div>
-						</li>
-						<!--{/foreach}-->
-					</ul>
-				</div>
-			</div>
-	<!-- {/if} -->
-<!-- {/if} -->
+<!-- #EndLibraryItem -->
+                </div>
+                <div style="width:100%; height:200px; display:none" class="a2">
+                <!-- #BeginLibraryItem "/library/recommend_new.lbi" -->
 
- <!-- #EndLibraryItem -->
-<!-- #BeginLibraryItem "/library/recommend_new.lbi" -->
+<!-- #EndLibraryItem -->
+                </div>
+                <div style="width:100%; height:200px; display:none" class="a3">
+                <!-- #BeginLibraryItem "/library/recommend_best.lbi" -->
 
-<!-- 新品上架 -->
-<!-- {if $new_goods} -->
-	<!-- {if $cat_rec_sign neq 1} -->
-			<div class="right-box box-border mt8">
-				<div class="right-box-tit">
-					<h2>{$lang.new_goods}</h2>
-					<a class="tit_more" href="../search.php?intro=new">更多</a>
-				</div>
-				<div class="right-box-dl">
-					<ul class="goodslist">
-						<!--{foreach from=$new_goods item=goods}-->
-						<li>
-							<div class="gl-img">
-								<a href="{$goods.url}">
-									<b class="gl-water">新品</b>
-									<img style="border:none;" src="{$goods.thumb}" alt="{$goods.name|escape:html}">
-								</a>
-								<!--{if !empty($goods.brief)}-->
-								<div class="gl-abst-disc"><p>{$goods.brief}</p></div>
-								<!--{/if}-->
-							</div>
-							<div class="gl-name-p">
-								<div class="gl-name"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></div>
-								<div class="gl-price">
-									<span class="gl-p-l"><b>
-									<!-- {if $goods.promote_price neq ""} -->
-									{$goods.promote_price}
-									<!-- {else}-->
-									{$goods.shop_price}
-									<!--{/if}-->
-									</b></span>
-									<span class="gl-p-r"><del>{$goods.market_price}</del></span>
-								</div>
-							</div>
-						</li>
-						<!--{/foreach}-->
-					</ul>
-				</div>
-			</div>
-	<!-- {/if} -->
-<!-- {/if} -->
- <!-- #EndLibraryItem -->
-<!-- TemplateEndEditable -->
+<!-- #EndLibraryItem -->
+                </div>
+            </div>
 		</div>
 	</div>
 </div>
@@ -237,11 +144,6 @@
 
 	<div class="cl pt8"></div>
 	<!-- TemplateBeginEditable name="全宽行" -->
-<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
-
-{insert name='ads' id=$ads_id num=$ads_num}
-
- <!-- #EndLibraryItem -->
 <!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
 
 	<div class="cl pt8"></div>
@@ -398,6 +300,11 @@
 {insert name='ads' id=$ads_id num=$ads_num}
 
  <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+
+ <!-- #EndLibraryItem -->
 <!-- TemplateEndEditable -->
 
 
@@ -420,6 +327,14 @@ $(function($) {
 -->
 </script>
 {/literal}
+<!-- TemplateBeginEditable name="文章列表上" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+
 <div class="show_article_list">
 	<div class="article_list_bg">
     	<div class="inde_pzdd_more"><a href="">更多>></a></div>
@@ -427,6 +342,7 @@ $(function($) {
         <div class="inde_pzdd_more"><a href="">更多>></a></div>
     </div>
 	<div class="article_list_content">
+    
     
     
 <!-- TemplateBeginEditable name="文章列表" -->
@@ -446,7 +362,7 @@ a{
 .show_article_list{
 	margin:auto;
 	width:1200px;
-	height:357px;
+	margin-top:10px;
 }
 .article_list_bg{
 	width:1200px;
@@ -470,7 +386,7 @@ a{
 }
 .article_list_content{
 	width:1198px;
-	height:308px;
+	height:270px;
 	border-right-width:1px;
 	border-bottom-width:1px;
 	border-left-width:1px;
@@ -482,7 +398,7 @@ a{
 	border-left-color:#e6e6e6;
 }
 .article_list_main{
-	width:365px;
+	width:375px;
 	height:302px;
 	padding-left:20px;
 }
@@ -497,15 +413,10 @@ a{
 	float:right;
 	color:#adacac;
 }
-.article_list_mid{
-	width:20px;
-	height:302px;
-	background:url(images/mid.png) no-repeat;
-}
 </style>
     	<div class="article_list_main fl">
         <!--{foreach from=$articles item=article_item}-->
-            	<p><a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title|truncate:13}</a><span>[2014-03-17]</span></p>
+            	<p><a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title|truncate:13}</a><span>{$article_item.add_time}</span></p>
         <!--{/foreach}-->          
         </div>
 
@@ -527,7 +438,7 @@ a{
 .show_article_list{
 	margin:auto;
 	width:1200px;
-	height:357px;
+	margin-top:10px;
 }
 .article_list_bg{
 	width:1200px;
@@ -551,7 +462,7 @@ a{
 }
 .article_list_content{
 	width:1198px;
-	height:308px;
+	height:270px;
 	border-right-width:1px;
 	border-bottom-width:1px;
 	border-left-width:1px;
@@ -563,7 +474,7 @@ a{
 	border-left-color:#e6e6e6;
 }
 .article_list_main{
-	width:365px;
+	width:375px;
 	height:302px;
 	padding-left:20px;
 }
@@ -578,15 +489,10 @@ a{
 	float:right;
 	color:#adacac;
 }
-.article_list_mid{
-	width:20px;
-	height:302px;
-	background:url(images/mid.png) no-repeat;
-}
 </style>
     	<div class="article_list_main fl">
         <!--{foreach from=$articles item=article_item}-->
-            	<p><a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title|truncate:13}</a><span>[2014-03-17]</span></p>
+            	<p><a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title|truncate:13}</a><span>{$article_item.add_time}</span></p>
         <!--{/foreach}-->          
         </div>
 
@@ -608,7 +514,7 @@ a{
 .show_article_list{
 	margin:auto;
 	width:1200px;
-	height:357px;
+	margin-top:10px;
 }
 .article_list_bg{
 	width:1200px;
@@ -632,7 +538,7 @@ a{
 }
 .article_list_content{
 	width:1198px;
-	height:308px;
+	height:270px;
 	border-right-width:1px;
 	border-bottom-width:1px;
 	border-left-width:1px;
@@ -644,7 +550,7 @@ a{
 	border-left-color:#e6e6e6;
 }
 .article_list_main{
-	width:365px;
+	width:375px;
 	height:302px;
 	padding-left:20px;
 }
@@ -659,15 +565,10 @@ a{
 	float:right;
 	color:#adacac;
 }
-.article_list_mid{
-	width:20px;
-	height:302px;
-	background:url(images/mid.png) no-repeat;
-}
 </style>
     	<div class="article_list_main fl">
         <!--{foreach from=$articles item=article_item}-->
-            	<p><a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title|truncate:13}</a><span>[2014-03-17]</span></p>
+            	<p><a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title|truncate:13}</a><span>{$article_item.add_time}</span></p>
         <!--{/foreach}-->          
         </div>
 

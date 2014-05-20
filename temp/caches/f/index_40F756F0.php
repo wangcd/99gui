@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:13:{i:0;s:41:"F:/wamp/www/5.19/themes/red_two/index.dwt";i:1;s:55:"F:/wamp/www/5.19/themes/red_two/library/page_header.lbi";i:2;s:63:"F:/wamp/www/5.19/themes/red_two/library/category_tree_index.lbi";i:3;s:52:"F:/wamp/www/5.19/themes/red_two/library/index_ad.lbi";i:4;s:55:"F:/wamp/www/5.19/themes/red_two/library/ad_position.lbi";i:5;s:49:"F:/wamp/www/5.19/themes/red_two/library/top10.lbi";i:6;s:58:"F:/wamp/www/5.19/themes/red_two/library/recommend_best.lbi";i:7;s:57:"F:/wamp/www/5.19/themes/red_two/library/recommend_hot.lbi";i:8;s:57:"F:/wamp/www/5.19/themes/red_two/library/recommend_new.lbi";i:9;s:50:"F:/wamp/www/5.19/themes/red_two/library/brands.lbi";i:10;s:53:"F:/wamp/www/5.19/themes/red_two/library/cat_goods.lbi";i:11;s:56:"F:/wamp/www/5.19/themes/red_two/library/cat_articles.lbi";i:12;s:55:"F:/wamp/www/5.19/themes/red_two/library/page_footer.lbi";}s:7:"expires";i:1400491118;s:8:"maketime";i:1400487518;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:12:{i:0;s:42:"F:/wamp/www/99gui/themes/red_two/index.dwt";i:1;s:56:"F:/wamp/www/99gui/themes/red_two/library/page_header.lbi";i:2;s:64:"F:/wamp/www/99gui/themes/red_two/library/category_tree_index.lbi";i:3;s:53:"F:/wamp/www/99gui/themes/red_two/library/index_ad.lbi";i:4;s:56:"F:/wamp/www/99gui/themes/red_two/library/ad_position.lbi";i:5;s:59:"F:/wamp/www/99gui/themes/red_two/library/recommend_best.lbi";i:6;s:58:"F:/wamp/www/99gui/themes/red_two/library/recommend_hot.lbi";i:7;s:58:"F:/wamp/www/99gui/themes/red_two/library/recommend_new.lbi";i:8;s:51:"F:/wamp/www/99gui/themes/red_two/library/brands.lbi";i:9;s:54:"F:/wamp/www/99gui/themes/red_two/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/99gui/themes/red_two/library/cat_articles.lbi";i:11;s:56:"F:/wamp/www/99gui/themes/red_two/library/page_footer.lbi";}s:7:"expires";i:1400561107;s:8:"maketime";i:1400557507;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -116,7 +116,9 @@ function checkSearchForm()
 <div class="wrap ban_wrap">
 	<div class="sitewith">
 		<div class="idxban-left">
-			<ul class="catetree-list">
+			 
+			
+<ul class="catetree-list">
 	<li>
 		<h3><span>&gt;</span><a href="category-1-b0.html" target="_blank">国家</a></h3>
 		<p>
@@ -182,14 +184,26 @@ function checkSearchForm()
 			}
 		);
 	});
-</script>		</div>
+			$(function(){
+				$(".category_li,.idxban-left").hover(
+					function(){
+						$(".idxban-left").show();
+					},
+					function(){
+						$(".idxban-left").hide();
+					}
+				);			
+			});	
+</script>
+		</div>
 		<div class="idxban-right">
-			<style type="text/css"> 
+			 
+<style type="text/css"> 
 .container, .container *{margin:0; padding:0;}
-.container{width:992px; height:400px; overflow:hidden;position:relative;}
+.container{width:1200px; height:400px; overflow:hidden;position:relative;}
 .slider{position:absolute;}
 .slider li{list-style:none;display:inline;}
-.slider img{width:992px; height:400px; display:block;}
+.slider img{width:1200px; height:400px; display:block;}
 .slider2{width:2000px;}
 .slider2 li{float:left;}
 .num{position:absolute; right:5px; bottom:5px;}
@@ -222,9 +236,10 @@ function checkSearchForm()
 </style>
 <div class="container" id="idTransformView">
   <ul class="slider" id="idSlider">
-      <li><a href="http://" target="_blank"><img src="data/afficheimg/20140319pvyxto.jpg"/></a></li>
-        <li><a href="http://" target="_blank"><img src="data/afficheimg/20140319mnwkxe.jpg"/></a></li>
-        <li><a href="http://" target="_blank"><img src="data/afficheimg/20140319jiplxq.jpg"/></a></li>
+      <li><a href="http://" target="_blank"><img src="data/afficheimg/20140520wjescf.jpg"/></a></li>
+        <li><a href="http://" target="_blank"><img src="data/afficheimg/20140520qvwpqo.jpg"/></a></li>
+        <li><a href="http://" target="_blank"><img src="data/afficheimg/20140520ysjcnf.jpg"/></a></li>
+        <li><a href="http://" target="_blank"><img src="data/afficheimg/20140520itcwsc.jpg"/></a></li>
       </ul>
   <ul class="num" id="idNum">
  
@@ -235,6 +250,8 @@ function checkSearchForm()
     2    </li> 
          <li>
     3    </li> 
+         <li>
+    4    </li> 
         
   </ul>
 </div>
@@ -408,12 +425,15 @@ window.onload=function(){
 	<div class="sitewith">
 		<div class="idxmid-left">
 			
+<!--
 			<div class="noticbox box-border mt8">
 				酒乐go酒业连锁精选600余全球品牌酒水（洋酒、红酒、啤酒、白酒、饮料），您只需拨打0379-66777766即可轻松订酒。
 <br />
 酒乐go会在20分钟内将酒水免费送到您指定的场所。免除搬运之累。  
 			</div>
+ -->           
 			
+            
 			
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"1";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca
 						<div class="left-box box-border mt8">
@@ -422,140 +442,219 @@ window.onload=function(){
 				</div>
 				<div class="left-box-dl" id="orderQueue_div">
 					<ul>
-											<li><a href="goods-4.html">法国拉菲庄园法莱利金冠2010干红礼盒 750ml</a></li>
-						<li>曾** (139****1373) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-9.html">53°汾酒集团20年陈酿（帝王黄）475ml </a></li>
-						<li>孙** (152****5089) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-7.html">52°茅台集团经典品位珍品 500ml </a></li>
-						<li>曾** (138****9970) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-5.html">法国拉菲庄园法莱利2011干红单支礼盒 750ml</a></li>
-						<li>丁** (159****4783) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-3.html">法国拉菲庄园法莱利干红葡萄酒 750ml</a></li>
-						<li>冯** (186****7506) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-9.html">53°汾酒集团20年陈酿（帝王黄）475ml </a></li>
-						<li>于** (152****7772) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-10.html">52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml</a></li>
-						<li>李** (136****3458) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-15.html">40°芝华士12年苏格兰威士忌 700ml </a></li>
-						<li>郭** (130****1452) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-16.html">40°轩尼诗VSOP干邑白兰地 700ml</a></li>
-						<li>宋** (153****8136) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-12.html">40°百加得超级朗姆酒 750ml</a></li>
-						<li>张** (189****4050) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-13.html">40°美国深蓝伏特加 750ml</a></li>
-						<li>石** (137****8245) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-7.html">52°茅台集团经典品位珍品 500ml </a></li>
-						<li>顾** (158****4629) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-11.html">42°白云边十二年陈酿 500ml</a></li>
-						<li>薛** (150****4653) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-1.html">法国马蒂隆1907干红葡萄酒 750ml</a></li>
-						<li>丁** (131****9753) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-2.html">法国拉菲庄园法莱利经典干红葡萄酒 750ml</a></li>
-						<li>袁** (130****5725) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-1.html">法国马蒂隆1907干红葡萄酒 750ml</a></li>
-						<li>韦** (132****1263) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-6.html">中国张裕馆藏干红葡萄酒 750ml</a></li>
-						<li>赵** (151****2888) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-9.html">53°汾酒集团20年陈酿（帝王黄）475ml </a></li>
-						<li>韩** (137****9606) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-17.html">40°美国杰克丹尼 700ml</a></li>
-						<li>钟** (135****8395) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-5.html">法国拉菲庄园法莱利2011干红单支礼盒 750ml</a></li>
-						<li>戴** (158****9405) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-5.html">法国拉菲庄园法莱利2011干红单支礼盒 750ml</a></li>
-						<li>孔** (151****4230) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-11.html">42°白云边十二年陈酿 500ml</a></li>
-						<li>冯** (158****1666) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-4.html">法国拉菲庄园法莱利金冠2010干红礼盒 750ml</a></li>
-						<li>熊** (189****6535) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-1.html">法国马蒂隆1907干红葡萄酒 750ml</a></li>
-						<li>邹** (188****7115) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-4.html">法国拉菲庄园法莱利金冠2010干红礼盒 750ml</a></li>
-						<li>王** (158****5624) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-17.html">40°美国杰克丹尼 700ml</a></li>
-						<li>杨** (188****6206) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-15.html">40°芝华士12年苏格兰威士忌 700ml </a></li>
-						<li>陆** (133****3754) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-16.html">40°轩尼诗VSOP干邑白兰地 700ml</a></li>
-						<li>白** (186****3558) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-6.html">中国张裕馆藏干红葡萄酒 750ml</a></li>
-						<li>江** (130****8459) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-15.html">40°芝华士12年苏格兰威士忌 700ml </a></li>
-						<li>吴** (130****3508) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-17.html">40°美国杰克丹尼 700ml</a></li>
-						<li>王** (157****8108) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-13.html">40°美国深蓝伏特加 750ml</a></li>
-						<li>徐** (151****3454) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-8.html">53°酱领经典捆沙工艺健康酱香 500ml</a></li>
-						<li>黄** (135****9679) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-8.html">53°酱领经典捆沙工艺健康酱香 500ml</a></li>
-						<li>姜** (150****4959) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-13.html">40°美国深蓝伏特加 750ml</a></li>
-						<li>苏** (155****5431) &nbsp;&nbsp;2014-05-19 </li>
 											<li><a href="goods-14.html">4.8°百加得冰锐朗姆预调酒蓝莓味 275ml</a></li>
-						<li>黄** (132****7083) &nbsp;&nbsp;2014-05-19 </li>
+						<li>马** (132****4340) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-15.html">40°芝华士12年苏格兰威士忌 700ml </a></li>
+						<li>朱** (156****1765) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-4.html">法国拉菲庄园法莱利金冠2010干红礼盒 750ml</a></li>
+						<li>韩** (155****2553) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-12.html">40°百加得超级朗姆酒 750ml</a></li>
+						<li>马** (186****7027) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-12.html">40°百加得超级朗姆酒 750ml</a></li>
+						<li>李** (132****4319) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-1.html">法国马蒂隆1907干红葡萄酒 750ml</a></li>
+						<li>陈** (157****2009) &nbsp;&nbsp;2014-05-20 </li>
 											<li><a href="goods-3.html">法国拉菲庄园法莱利干红葡萄酒 750ml</a></li>
-						<li>彭** (186****1787) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-3.html">法国拉菲庄园法莱利干红葡萄酒 750ml</a></li>
-						<li>谭** (150****8613) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-2.html">法国拉菲庄园法莱利经典干红葡萄酒 750ml</a></li>
-						<li>曹** (135****3779) &nbsp;&nbsp;2014-05-19 </li>
+						<li>余** (131****9952) &nbsp;&nbsp;2014-05-20 </li>
 											<li><a href="goods-6.html">中国张裕馆藏干红葡萄酒 750ml</a></li>
-						<li>余** (132****1391) &nbsp;&nbsp;2014-05-19 </li>
+						<li>陈** (139****8270) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-10.html">52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml</a></li>
+						<li>周** (133****5045) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-13.html">40°美国深蓝伏特加 750ml</a></li>
+						<li>樊** (155****9318) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-4.html">法国拉菲庄园法莱利金冠2010干红礼盒 750ml</a></li>
+						<li>梁** (152****7129) &nbsp;&nbsp;2014-05-20 </li>
 											<li><a href="goods-8.html">53°酱领经典捆沙工艺健康酱香 500ml</a></li>
-						<li>吴** (134****8388) &nbsp;&nbsp;2014-05-19 </li>
+						<li>萧** (152****6162) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-13.html">40°美国深蓝伏特加 750ml</a></li>
+						<li>雷** (138****5684) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-6.html">中国张裕馆藏干红葡萄酒 750ml</a></li>
+						<li>孟** (137****1751) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-17.html">40°美国杰克丹尼 700ml</a></li>
+						<li>余** (189****8800) &nbsp;&nbsp;2014-05-20 </li>
 											<li><a href="goods-7.html">52°茅台集团经典品位珍品 500ml </a></li>
-						<li>范** (137****8085) &nbsp;&nbsp;2014-05-19 </li>
-											<li><a href="goods-11.html">42°白云边十二年陈酿 500ml</a></li>
-						<li>陈** (136****6761) &nbsp;&nbsp;2014-05-19 </li>
+						<li>袁** (130****3203) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-1.html">法国马蒂隆1907干红葡萄酒 750ml</a></li>
+						<li>赖** (189****9847) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-8.html">53°酱领经典捆沙工艺健康酱香 500ml</a></li>
+						<li>韩** (152****6248) &nbsp;&nbsp;2014-05-20 </li>
 											<li><a href="goods-16.html">40°轩尼诗VSOP干邑白兰地 700ml</a></li>
-						<li>孟** (137****4430) &nbsp;&nbsp;2014-05-19 </li>
+						<li>李** (152****7469) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-14.html">4.8°百加得冰锐朗姆预调酒蓝莓味 275ml</a></li>
+						<li>马** (134****6337) &nbsp;&nbsp;2014-05-20 </li>
 											<li><a href="goods-2.html">法国拉菲庄园法莱利经典干红葡萄酒 750ml</a></li>
-						<li>郭** (136****4210) &nbsp;&nbsp;2014-05-19 </li>
+						<li>罗** (189****7813) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-16.html">40°轩尼诗VSOP干邑白兰地 700ml</a></li>
+						<li>韩** (152****9755) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-10.html">52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml</a></li>
+						<li>林** (136****8967) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-3.html">法国拉菲庄园法莱利干红葡萄酒 750ml</a></li>
+						<li>蒋** (159****9176) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-17.html">40°美国杰克丹尼 700ml</a></li>
+						<li>高** (131****3192) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-15.html">40°芝华士12年苏格兰威士忌 700ml </a></li>
+						<li>尹** (156****3664) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-7.html">52°茅台集团经典品位珍品 500ml </a></li>
+						<li>吕** (134****5796) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-9.html">53°汾酒集团20年陈酿（帝王黄）475ml </a></li>
+						<li>董** (186****9776) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-2.html">法国拉菲庄园法莱利经典干红葡萄酒 750ml</a></li>
+						<li>高** (153****4039) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-5.html">法国拉菲庄园法莱利2011干红单支礼盒 750ml</a></li>
+						<li>傅** (186****1582) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-11.html">42°白云边十二年陈酿 500ml</a></li>
+						<li>钟** (133****3788) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-3.html">法国拉菲庄园法莱利干红葡萄酒 750ml</a></li>
+						<li>武** (133****1750) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-11.html">42°白云边十二年陈酿 500ml</a></li>
+						<li>谢** (136****5078) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-4.html">法国拉菲庄园法莱利金冠2010干红礼盒 750ml</a></li>
+						<li>田** (151****3788) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-10.html">52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml</a></li>
+						<li>邓** (158****4332) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-13.html">40°美国深蓝伏特加 750ml</a></li>
+						<li>杜** (139****9813) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-5.html">法国拉菲庄园法莱利2011干红单支礼盒 750ml</a></li>
+						<li>曾** (130****5474) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-16.html">40°轩尼诗VSOP干邑白兰地 700ml</a></li>
+						<li>赵** (137****6115) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-9.html">53°汾酒集团20年陈酿（帝王黄）475ml </a></li>
+						<li>李** (139****4372) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-12.html">40°百加得超级朗姆酒 750ml</a></li>
+						<li>刘** (155****9806) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-11.html">42°白云边十二年陈酿 500ml</a></li>
+						<li>田** (159****8838) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-2.html">法国拉菲庄园法莱利经典干红葡萄酒 750ml</a></li>
+						<li>余** (189****8841) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-14.html">4.8°百加得冰锐朗姆预调酒蓝莓味 275ml</a></li>
+						<li>杨** (132****5297) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-9.html">53°汾酒集团20年陈酿（帝王黄）475ml </a></li>
+						<li>蔡** (188****8670) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-17.html">40°美国杰克丹尼 700ml</a></li>
+						<li>邓** (137****5450) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-7.html">52°茅台集团经典品位珍品 500ml </a></li>
+						<li>卢** (131****7800) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-6.html">中国张裕馆藏干红葡萄酒 750ml</a></li>
+						<li>史** (150****4053) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-5.html">法国拉菲庄园法莱利2011干红单支礼盒 750ml</a></li>
+						<li>丁** (156****8905) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-8.html">53°酱领经典捆沙工艺健康酱香 500ml</a></li>
+						<li>陶** (155****7807) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-1.html">法国马蒂隆1907干红葡萄酒 750ml</a></li>
+						<li>汤** (132****3271) &nbsp;&nbsp;2014-05-20 </li>
+											<li><a href="goods-15.html">40°芝华士12年苏格兰威士忌 700ml </a></li>
+						<li>高** (157****2028) &nbsp;&nbsp;2014-05-20 </li>
 										</ul>
 				</div>
 			</div>
-			<div class="box top10">
- 
- <div class="box_1">
-   <h3><span>销售排行榜</span></h3>
-  <div class="top10List clearfix">
-    <ul class="clearfix">
-	<img src="themes/red_two/images/top_1.gif" class="iteration" />
-	      <li class="topimg">
-      <a href="goods-2.html"><img src="images/201403/thumb_img/2_thumb_G_1395438523627.jpg" alt="" class="samllimg" /></a>
-      </li>
-			
-      <li class="iteration1">
-      <a href="goods-2.html" title="">法国拉菲庄园法莱利经典干红...</a><br />
-      <font class="f1">¥99.00</font><br />
-      </li>
-    </ul>
-    <ul class="clearfix">
-	<img src="themes/red_two/images/top_2.gif" class="iteration" />
-	      <li class="topimg">
-      <a href="goods-1.html"><img src="images/201403/thumb_img/1_thumb_G_1395430740653.jpg" alt="" class="samllimg" /></a>
-      </li>
-			
-      <li class="iteration1">
-      <a href="goods-1.html" title="">法国马蒂隆1907干红葡萄...</a><br />
-      <font class="f1">¥88.00</font><br />
-      </li>
-    </ul>
-    </div>
- </div>
-</div>
-<div class="blank5"></div>            
+			           
 		</div>
 		<div class="idxmid-right">
-		
+<script>
+$(function(){
+	$(".qh_title").mouseover(
+		function(){
+			$(".qh_box div").removeClass("qh_title2");
+			$(".qh_box div").addClass("qh_title1");
+			$(this).addClass("qh_title2");
+			$(".a0,.a1,.a2,.a3").css("display","none");
+			$(".a"+$(this).index()).css("display","block");
+		}
+	);
+})
+</script>
+           <div class="qh_box">
+                <div class="qh_title qh_title2">精品推荐</div>
+                <div class="qh_title qh_title1">本月热销</div>
+                <div class="qh_title qh_title1">新品上架</div>
+                <div class="qh_title qh_title1">限时抢购</div>
+            </div>        
+            <div class="qh_con">
+                <div style="width:100%; height:200px;" class="a0">
+                
 				<div class="right-box box-border mt8">
-				<div class="right-box-tit">
-					<h2>精品推荐</h2>
-					<a class="tit_more" href="search.php?intro=best">更多</a>
-				</div>
 				<div class="right-box-dl">
 					<ul class="goodslist">
+												<li>
+							<div class="gl-img">
+								<a href="goods-9.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/9_thumb_G_1395447825176.jpg" alt="53°汾酒集团20年陈酿（帝王黄）475ml ">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-9.html" title="53°汾酒集团20年陈酿（帝王黄）475ml ">53°汾酒集团20年陈酿（帝王黄）475ml </a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥98.00																		</b></span>
+									<span class="gl-p-r"><del>¥558.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-12.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/12_thumb_G_1395617056053.jpg" alt="40°百加得超级朗姆酒 750ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-12.html" title="40°百加得超级朗姆酒 750ml">40°百加得超级朗姆酒 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥69.00																		</b></span>
+									<span class="gl-p-r"><del>¥141.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-11.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/11_thumb_G_1395448568881.jpg" alt="42°白云边十二年陈酿 500ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-11.html" title="42°白云边十二年陈酿 500ml">42°白云边十二年陈酿 500ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥99.00																		</b></span>
+									<span class="gl-p-r"><del>¥178.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-14.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/14_thumb_G_1395617579293.jpg" alt="4.8°百加得冰锐朗姆预调酒蓝莓味 275ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-14.html" title="4.8°百加得冰锐朗姆预调酒蓝莓味 275ml">4.8°百加得冰锐朗姆预调酒蓝莓味 275ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥9.90																		</b></span>
+									<span class="gl-p-r"><del>¥16.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-15.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/15_thumb_G_1395617648685.jpg" alt="40°芝华士12年苏格兰威士忌 700ml ">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-15.html" title="40°芝华士12年苏格兰威士忌 700ml ">40°芝华士12年苏格兰威士忌 700ml </a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥199.00																		</b></span>
+									<span class="gl-p-r"><del>¥308.00</del></span>
+								</div>
+							</div>
+						</li>
 												<li>
 							<div class="gl-img">
 								<a href="goods-17.html">
@@ -570,6 +669,22 @@ window.onload=function(){
 									<span class="gl-p-l"><b>
 																		¥157.00																		</b></span>
 									<span class="gl-p-r"><del>¥218.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-13.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/13_thumb_G_1395617424080.jpg" alt="40°美国深蓝伏特加 750ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-13.html" title="40°美国深蓝伏特加 750ml">40°美国深蓝伏特加 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥56.00																		</b></span>
+									<span class="gl-p-r"><del>¥120.00</del></span>
 								</div>
 							</div>
 						</li>
@@ -622,10 +737,19 @@ window.onload=function(){
 								</div>
 							</div>
 						</li>
+											</ul>
+				</div>
+			</div>
+	                </div>
+                <div style="width:100%; height:200px; display:none" class="a1">
+                
+				<div class="right-box box-border mt8">
+				<div class="right-box-dl">
+					<ul class="goodslist">
 												<li>
 							<div class="gl-img">
 								<a href="goods-9.html">
-									<b class="gl-water">精品</b>
+									<b class="gl-water">热销</b>
 									<img style="border:none;" src="images/201403/thumb_img/9_thumb_G_1395447825176.jpg" alt="53°汾酒集团20年陈酿（帝王黄）475ml ">
 								</a>
 															</div>
@@ -638,16 +762,103 @@ window.onload=function(){
 								</div>
 							</div>
 						</li>
-											</ul>
-				</div>
-			</div>
-					<div class="right-box box-border mt8">
-				<div class="right-box-tit">
-					<h2>本月热销</h2>
-					<a class="tit_more" href="search.php?intro=hot">更多</a>
-				</div>
-				<div class="right-box-dl">
-					<ul class="goodslist">
+												<li>
+							<div class="gl-img">
+								<a href="goods-10.html">
+									<b class="gl-water">热销</b>
+									<img style="border:none;" src="images/201403/thumb_img/10_thumb_G_1395448400369.jpg" alt="52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-10.html" title="52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml">52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥4623.00																		</b></span>
+									<span class="gl-p-r"><del>¥599.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-12.html">
+									<b class="gl-water">热销</b>
+									<img style="border:none;" src="images/201403/thumb_img/12_thumb_G_1395617056053.jpg" alt="40°百加得超级朗姆酒 750ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-12.html" title="40°百加得超级朗姆酒 750ml">40°百加得超级朗姆酒 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥69.00																		</b></span>
+									<span class="gl-p-r"><del>¥141.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-11.html">
+									<b class="gl-water">热销</b>
+									<img style="border:none;" src="images/201403/thumb_img/11_thumb_G_1395448568881.jpg" alt="42°白云边十二年陈酿 500ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-11.html" title="42°白云边十二年陈酿 500ml">42°白云边十二年陈酿 500ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥99.00																		</b></span>
+									<span class="gl-p-r"><del>¥178.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-14.html">
+									<b class="gl-water">热销</b>
+									<img style="border:none;" src="images/201403/thumb_img/14_thumb_G_1395617579293.jpg" alt="4.8°百加得冰锐朗姆预调酒蓝莓味 275ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-14.html" title="4.8°百加得冰锐朗姆预调酒蓝莓味 275ml">4.8°百加得冰锐朗姆预调酒蓝莓味 275ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥9.90																		</b></span>
+									<span class="gl-p-r"><del>¥16.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-15.html">
+									<b class="gl-water">热销</b>
+									<img style="border:none;" src="images/201403/thumb_img/15_thumb_G_1395617648685.jpg" alt="40°芝华士12年苏格兰威士忌 700ml ">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-15.html" title="40°芝华士12年苏格兰威士忌 700ml ">40°芝华士12年苏格兰威士忌 700ml </a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥199.00																		</b></span>
+									<span class="gl-p-r"><del>¥308.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-17.html">
+									<b class="gl-water">热销</b>
+									<img style="border:none;" src="images/201403/thumb_img/17_thumb_G_1395622052281.jpg" alt="40°美国杰克丹尼 700ml">
+								</a>
+																<div class="gl-abst-disc"><p>JACK DANIELS 杰克·丹尼，世界十大名酒之一。杰克丹尼酒厂1866年诞生于美国田纳西州莲芝堡，是美国第一间注册的蒸馏酒厂。杰克丹尼威士忌畅销全球一百三十多个国家，单瓶销量多年来高踞全球美国威士忌之首。杰克丹尼酒厂位于田纳西州的莲芝堡，是美国最古老的注册酒厂。挑选最上等的玉米、黑麦及麦芽等全天然谷物，配合高山泉水酿制，不含人造成份。采用独特的枫木过滤方法，用新烧制的美国白橡木桶储存，让酒质散发天然独特的馥郁芬芳。</p></div>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-17.html" title="40°美国杰克丹尼 700ml">40°美国杰克丹尼 700ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥157.00																		</b></span>
+									<span class="gl-p-r"><del>¥218.00</del></span>
+								</div>
+							</div>
+						</li>
 												<li>
 							<div class="gl-img">
 								<a href="goods-16.html">
@@ -682,38 +893,6 @@ window.onload=function(){
 						</li>
 												<li>
 							<div class="gl-img">
-								<a href="goods-13.html">
-									<b class="gl-water">热销</b>
-									<img style="border:none;" src="images/201403/thumb_img/13_thumb_G_1395617424080.jpg" alt="40°美国深蓝伏特加 750ml">
-								</a>
-															</div>
-							<div class="gl-name-p">
-								<div class="gl-name"><a href="goods-13.html" title="40°美国深蓝伏特加 750ml">40°美国深蓝伏特加 750ml</a></div>
-								<div class="gl-price">
-									<span class="gl-p-l"><b>
-																		¥56.00																		</b></span>
-									<span class="gl-p-r"><del>¥120.00</del></span>
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="gl-img">
-								<a href="goods-1.html">
-									<b class="gl-water">热销</b>
-									<img style="border:none;" src="images/201403/thumb_img/1_thumb_G_1395430740653.jpg" alt="法国马蒂隆1907干红葡萄酒 750ml">
-								</a>
-															</div>
-							<div class="gl-name-p">
-								<div class="gl-name"><a href="goods-1.html" title="法国马蒂隆1907干红葡萄酒 750ml">法国马蒂隆1907干红葡萄酒 750ml</a></div>
-								<div class="gl-price">
-									<span class="gl-p-l"><b>
-																		¥88.00																		</b></span>
-									<span class="gl-p-r"><del>¥320.00</del></span>
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="gl-img">
 								<a href="goods-7.html">
 									<b class="gl-water">热销</b>
 									<img style="border:none;" src="images/201403/thumb_img/7_thumb_G_1395447509246.jpg" alt="52°茅台集团经典品位珍品 500ml ">
@@ -731,13 +910,109 @@ window.onload=function(){
 											</ul>
 				</div>
 			</div>
-					<div class="right-box box-border mt8">
-				<div class="right-box-tit">
-					<h2>新品上架</h2>
-					<a class="tit_more" href="search.php?intro=new">更多</a>
-				</div>
+	                </div>
+                <div style="width:100%; height:200px; display:none" class="a2">
+                
+				<div class="right-box box-border mt8">
 				<div class="right-box-dl">
 					<ul class="goodslist">
+												<li>
+							<div class="gl-img">
+								<a href="goods-11.html">
+									<b class="gl-water">新品</b>
+									<img style="border:none;" src="images/201403/thumb_img/11_thumb_G_1395448568881.jpg" alt="42°白云边十二年陈酿 500ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-11.html" title="42°白云边十二年陈酿 500ml">42°白云边十二年陈酿 500ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥99.00																		</b></span>
+									<span class="gl-p-r"><del>¥178.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-14.html">
+									<b class="gl-water">新品</b>
+									<img style="border:none;" src="images/201403/thumb_img/14_thumb_G_1395617579293.jpg" alt="4.8°百加得冰锐朗姆预调酒蓝莓味 275ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-14.html" title="4.8°百加得冰锐朗姆预调酒蓝莓味 275ml">4.8°百加得冰锐朗姆预调酒蓝莓味 275ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥9.90																		</b></span>
+									<span class="gl-p-r"><del>¥16.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-15.html">
+									<b class="gl-water">新品</b>
+									<img style="border:none;" src="images/201403/thumb_img/15_thumb_G_1395617648685.jpg" alt="40°芝华士12年苏格兰威士忌 700ml ">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-15.html" title="40°芝华士12年苏格兰威士忌 700ml ">40°芝华士12年苏格兰威士忌 700ml </a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥199.00																		</b></span>
+									<span class="gl-p-r"><del>¥308.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-17.html">
+									<b class="gl-water">新品</b>
+									<img style="border:none;" src="images/201403/thumb_img/17_thumb_G_1395622052281.jpg" alt="40°美国杰克丹尼 700ml">
+								</a>
+																<div class="gl-abst-disc"><p>JACK DANIELS 杰克·丹尼，世界十大名酒之一。杰克丹尼酒厂1866年诞生于美国田纳西州莲芝堡，是美国第一间注册的蒸馏酒厂。杰克丹尼威士忌畅销全球一百三十多个国家，单瓶销量多年来高踞全球美国威士忌之首。杰克丹尼酒厂位于田纳西州的莲芝堡，是美国最古老的注册酒厂。挑选最上等的玉米、黑麦及麦芽等全天然谷物，配合高山泉水酿制，不含人造成份。采用独特的枫木过滤方法，用新烧制的美国白橡木桶储存，让酒质散发天然独特的馥郁芬芳。</p></div>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-17.html" title="40°美国杰克丹尼 700ml">40°美国杰克丹尼 700ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥157.00																		</b></span>
+									<span class="gl-p-r"><del>¥218.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-13.html">
+									<b class="gl-water">新品</b>
+									<img style="border:none;" src="images/201403/thumb_img/13_thumb_G_1395617424080.jpg" alt="40°美国深蓝伏特加 750ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-13.html" title="40°美国深蓝伏特加 750ml">40°美国深蓝伏特加 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥56.00																		</b></span>
+									<span class="gl-p-r"><del>¥120.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-16.html">
+									<b class="gl-water">新品</b>
+									<img style="border:none;" src="images/201403/thumb_img/16_thumb_G_1395617729945.jpg" alt="40°轩尼诗VSOP干邑白兰地 700ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-16.html" title="40°轩尼诗VSOP干邑白兰地 700ml">40°轩尼诗VSOP干邑白兰地 700ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥315.00																		</b></span>
+									<span class="gl-p-r"><del>¥490.00</del></span>
+								</div>
+							</div>
+						</li>
 												<li>
 							<div class="gl-img">
 								<a href="goods-1.html">
@@ -802,10 +1077,83 @@ window.onload=function(){
 								</div>
 							</div>
 						</li>
+											</ul>
+				</div>
+			</div>
+	                </div>
+                <div style="width:100%; height:200px; display:none" class="a3">
+                
+				<div class="right-box box-border mt8">
+				<div class="right-box-dl">
+					<ul class="goodslist">
+												<li>
+							<div class="gl-img">
+								<a href="goods-9.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/9_thumb_G_1395447825176.jpg" alt="53°汾酒集团20年陈酿（帝王黄）475ml ">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-9.html" title="53°汾酒集团20年陈酿（帝王黄）475ml ">53°汾酒集团20年陈酿（帝王黄）475ml </a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥98.00																		</b></span>
+									<span class="gl-p-r"><del>¥558.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-12.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/12_thumb_G_1395617056053.jpg" alt="40°百加得超级朗姆酒 750ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-12.html" title="40°百加得超级朗姆酒 750ml">40°百加得超级朗姆酒 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥69.00																		</b></span>
+									<span class="gl-p-r"><del>¥141.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-11.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/11_thumb_G_1395448568881.jpg" alt="42°白云边十二年陈酿 500ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-11.html" title="42°白云边十二年陈酿 500ml">42°白云边十二年陈酿 500ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥99.00																		</b></span>
+									<span class="gl-p-r"><del>¥178.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-14.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/14_thumb_G_1395617579293.jpg" alt="4.8°百加得冰锐朗姆预调酒蓝莓味 275ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-14.html" title="4.8°百加得冰锐朗姆预调酒蓝莓味 275ml">4.8°百加得冰锐朗姆预调酒蓝莓味 275ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥9.90																		</b></span>
+									<span class="gl-p-r"><del>¥16.00</del></span>
+								</div>
+							</div>
+						</li>
 												<li>
 							<div class="gl-img">
 								<a href="goods-15.html">
-									<b class="gl-water">新品</b>
+									<b class="gl-water">精品</b>
 									<img style="border:none;" src="images/201403/thumb_img/15_thumb_G_1395617648685.jpg" alt="40°芝华士12年苏格兰威士忌 700ml ">
 								</a>
 															</div>
@@ -818,10 +1166,93 @@ window.onload=function(){
 								</div>
 							</div>
 						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-17.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/17_thumb_G_1395622052281.jpg" alt="40°美国杰克丹尼 700ml">
+								</a>
+																<div class="gl-abst-disc"><p>JACK DANIELS 杰克·丹尼，世界十大名酒之一。杰克丹尼酒厂1866年诞生于美国田纳西州莲芝堡，是美国第一间注册的蒸馏酒厂。杰克丹尼威士忌畅销全球一百三十多个国家，单瓶销量多年来高踞全球美国威士忌之首。杰克丹尼酒厂位于田纳西州的莲芝堡，是美国最古老的注册酒厂。挑选最上等的玉米、黑麦及麦芽等全天然谷物，配合高山泉水酿制，不含人造成份。采用独特的枫木过滤方法，用新烧制的美国白橡木桶储存，让酒质散发天然独特的馥郁芬芳。</p></div>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-17.html" title="40°美国杰克丹尼 700ml">40°美国杰克丹尼 700ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥157.00																		</b></span>
+									<span class="gl-p-r"><del>¥218.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-13.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/13_thumb_G_1395617424080.jpg" alt="40°美国深蓝伏特加 750ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-13.html" title="40°美国深蓝伏特加 750ml">40°美国深蓝伏特加 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥56.00																		</b></span>
+									<span class="gl-p-r"><del>¥120.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-1.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/1_thumb_G_1395430740653.jpg" alt="法国马蒂隆1907干红葡萄酒 750ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-1.html" title="法国马蒂隆1907干红葡萄酒 750ml">法国马蒂隆1907干红葡萄酒 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥88.00																		</b></span>
+									<span class="gl-p-r"><del>¥320.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-2.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/2_thumb_G_1395438523627.jpg" alt="法国拉菲庄园法莱利经典干红葡萄酒 750ml">
+								</a>
+																<div class="gl-abst-disc"><p>法国拉菲庄园法莱利经典干红葡萄酒，散发着黑莓的紫色和微微的胡椒香，酒体适中，入口有浓郁的果香夹带着优雅的丹宁。与各种卤汁料理，野味和辣菜、酱鸭、鹅肝、红烧肉搭配最佳。</p></div>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-2.html" title="法国拉菲庄园法莱利经典干红葡萄酒 750ml">法国拉菲庄园法莱利经典干红葡萄酒 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥99.00																		</b></span>
+									<span class="gl-p-r"><del>¥538.00</del></span>
+								</div>
+							</div>
+						</li>
+												<li>
+							<div class="gl-img">
+								<a href="goods-6.html">
+									<b class="gl-water">精品</b>
+									<img style="border:none;" src="images/201403/thumb_img/6_thumb_G_1395444655866.jpg" alt="中国张裕馆藏干红葡萄酒 750ml">
+								</a>
+															</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="goods-6.html" title="中国张裕馆藏干红葡萄酒 750ml">中国张裕馆藏干红葡萄酒 750ml</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+																		¥88.00																		</b></span>
+									<span class="gl-p-r"><del>¥118.00</del></span>
+								</div>
+							</div>
+						</li>
 											</ul>
 				</div>
 			</div>
-	
+	                </div>
+            </div>
 		</div>
 	</div>
 </div>
@@ -834,13 +1265,22 @@ window.onload=function(){
 		<div class="brand-box-dl" id="brandWall">
 		
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"2";s:3:"num";s:1:"5";}554fcae493e564ee0dc75bdf2ebf94ca			<div class="bxdl-list">
-												<a href="brand-4-c0.html"><img src="data/brandlogo/1395448683403491061.jpg" alt="茅台"></a> 
-																																																																																																											</div>
+												<a href="brand-17-c0.html"><img src="data/brandlogo/1400528496685440863.jpg" alt="牛栏山"></a> 
+																<a href="brand-4-c0.html"><img src="data/brandlogo/1395448683403491061.jpg" alt="茅台"></a> 
+																<a href="brand-16-c0.html"><img src="data/brandlogo/1400528482609798640.jpg" alt="洋河"></a> 
+																<a href="brand-15-c0.html"><img src="data/brandlogo/1400528460211034819.gif" alt="泸州老窖"></a> 
+																<a href="brand-14-c0.html"><img src="data/brandlogo/1400528425368511970.gif" alt="郎酒"></a> 
+																<a href="brand-18-c0.html"><img src="data/brandlogo/1400528526227688865.jpg" alt="女儿红"></a> 
+																<a href="brand-19-c0.html"><img src="data/brandlogo/1400528552663389092.jpg" alt="杜康"></a> 
+																<a href="brand-20-c0.html"><img src="data/brandlogo/1400528640120204211.jpg" alt="长城葡萄酒"></a> 
+																<a href="brand-21-c0.html"><img src="data/brandlogo/1400528679252525164.jpg" alt="卡斯特 塔尼"></a> 
+																<a href="brand-22-c0.html"><img src="data/brandlogo/1400528705595856436.jpg" alt="五粮液"></a> 
+											</div>
 		</div>
 	</div>
 	<div class="cl pt8"></div>
 	
-554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"3";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca<div class="cl pt8"></div>
+	<div class="cl pt8"></div>
 	<div class="wrap cl">
 		<div class="sitewith footer">
 			<div class="fullbox box-border">
@@ -1136,7 +1576,7 @@ window.onload=function(){
 	</div>
 </div>
 <div style="display:none;">
-554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"4";s:3:"num";s:1:"3";}554fcae493e564ee0dc75bdf2ebf94ca
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"4";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"4";s:3:"num";s:1:"3";}554fcae493e564ee0dc75bdf2ebf94ca
 </div>
 <script type="text/javascript" src="themes/red_two/js/marquee.js"></script>
 <script type="text/javascript">
@@ -1154,6 +1594,7 @@ $(function($) {
 });
 -->
 </script>
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"3";s:3:"num";s:1:"2";}554fcae493e564ee0dc75bdf2ebf94ca
 <div class="show_article_list">
 	<div class="article_list_bg">
     	<div class="inde_pzdd_more"><a href="">更多>></a></div>
@@ -1161,6 +1602,7 @@ $(function($) {
         <div class="inde_pzdd_more"><a href="">更多>></a></div>
     </div>
 	<div class="article_list_content">
+    
     
     
 <style>
@@ -1177,6 +1619,7 @@ a{
 .show_article_list{
 	margin:auto;
 	width:1200px;
+	margin-top:10px;
 }
 .article_list_bg{
 	width:1200px;
@@ -1234,7 +1677,8 @@ a{
                     	<p><a href="article-29.html" title="品尚动态1">品尚动态1</a><span>2014-05-18</span></p>
                     	<p><a href="article-28.html" title="品尚动态">品尚动态</a><span>2014-05-18</span></p>
                   
-        </div><style>
+        </div>
+<style>
 .bor{
 	border:1px solid;
 }
@@ -1248,6 +1692,7 @@ a{
 .show_article_list{
 	margin:auto;
 	width:1200px;
+	margin-top:10px;
 }
 .article_list_bg{
 	width:1200px;
@@ -1323,6 +1768,7 @@ a{
 .show_article_list{
 	margin:auto;
 	width:1200px;
+	margin-top:10px;
 }
 .article_list_bg{
 	width:1200px;

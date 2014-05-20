@@ -34,11 +34,15 @@
 <div class="wrap">
 	<div class="sitewith">
 		<div class="idxmid-left">
+
 			
+<!--
 			<div class="noticbox box-border mt8">
 				<?php echo $this->_var['shop_notice']; ?>  
 			</div>
+ -->           
 			
+            
 			
 <?php $this->assign('ads_id','1'); ?><?php $this->assign('ads_num','1'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
 
@@ -59,15 +63,42 @@
 				</div>
 			</div>
 			<?php endif; ?>
-<?php echo $this->fetch('library/top10.lbi'); ?>
-            
+           
 		</div>
 		<div class="idxmid-right">
-		
-<?php echo $this->fetch('library/recommend_best.lbi'); ?>
-<?php echo $this->fetch('library/recommend_hot.lbi'); ?>
-<?php echo $this->fetch('library/recommend_new.lbi'); ?>
-
+<script>
+$(function(){
+	$(".qh_title").mouseover(
+		function(){
+			$(".qh_box div").removeClass("qh_title2");
+			$(".qh_box div").addClass("qh_title1");
+			$(this).addClass("qh_title2");
+			$(".a0,.a1,.a2,.a3").css("display","none");
+			$(".a"+$(this).index()).css("display","block");
+		}
+	);
+})
+</script>
+           <div class="qh_box">
+                <div class="qh_title qh_title2">精品推荐</div>
+                <div class="qh_title qh_title1">本月热销</div>
+                <div class="qh_title qh_title1">新品上架</div>
+                <div class="qh_title qh_title1">限时抢购</div>
+            </div>        
+            <div class="qh_con">
+                <div style="width:100%; height:200px;" class="a0">
+                <?php echo $this->fetch('library/recommend_best.lbi'); ?>
+                </div>
+                <div style="width:100%; height:200px; display:none" class="a1">
+                <?php echo $this->fetch('library/recommend_hot.lbi'); ?>
+                </div>
+                <div style="width:100%; height:200px; display:none" class="a2">
+                <?php echo $this->fetch('library/recommend_new.lbi'); ?>
+                </div>
+                <div style="width:100%; height:200px; display:none" class="a3">
+                <?php echo $this->fetch('library/recommend_best.lbi'); ?>
+                </div>
+            </div>
 		</div>
 	</div>
 </div>
@@ -89,7 +120,6 @@
 
 	<div class="cl pt8"></div>
 	
-<?php $this->assign('ads_id','3'); ?><?php $this->assign('ads_num','1'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
 <?php $this->assign('cat_goods',$this->_var['cat_goods_2']); ?><?php $this->assign('goods_cat',$this->_var['goods_cat_2']); ?><?php echo $this->fetch('library/cat_goods.lbi'); ?>
 <?php $this->assign('cat_goods',$this->_var['cat_goods_1']); ?><?php $this->assign('goods_cat',$this->_var['goods_cat_1']); ?><?php echo $this->fetch('library/cat_goods.lbi'); ?>
 <?php $this->assign('cat_goods',$this->_var['cat_goods_3']); ?><?php $this->assign('goods_cat',$this->_var['goods_cat_3']); ?><?php echo $this->fetch('library/cat_goods.lbi'); ?>
@@ -97,6 +127,7 @@
 </div>
 <div style="display:none;">
 
+<?php $this->assign('ads_id','4'); ?><?php $this->assign('ads_num','1'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
 <?php $this->assign('ads_id','4'); ?><?php $this->assign('ads_num','3'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
 
 
@@ -120,6 +151,10 @@ $(function($) {
 -->
 </script>
 
+
+<?php $this->assign('ads_id','3'); ?><?php $this->assign('ads_num','2'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
+
+
 <div class="show_article_list">
 	<div class="article_list_bg">
     	<div class="inde_pzdd_more"><a href="">更多>></a></div>
@@ -127,6 +162,7 @@ $(function($) {
         <div class="inde_pzdd_more"><a href="">更多>></a></div>
     </div>
 	<div class="article_list_content">
+    
     
     
 

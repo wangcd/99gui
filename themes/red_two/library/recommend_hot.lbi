@@ -3,10 +3,6 @@
 <!-- {if $hot_goods} -->
 	<!-- {if $cat_rec_sign neq 1} -->
 			<div class="right-box box-border mt8">
-				<div class="right-box-tit">
-					<h2>{$lang.hot_goods}</h2>
-					<a class="tit_more" href="../search.php?intro=hot">更多</a>
-				</div>
 				<div class="right-box-dl">
 					<ul class="goodslist">
 						<!--{foreach from=$hot_goods item=goods}-->
