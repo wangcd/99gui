@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:7:{i:0;s:44:"F:/wamp/www/99gui/themes/red_two/article.dwt";i:1;s:56:"F:/wamp/www/99gui/themes/red_two/library/page_header.lbi";i:2;s:52:"F:/wamp/www/99gui/themes/red_two/library/ur_here.lbi";i:3;s:54:"F:/wamp/www/99gui/themes/red_two/library/left_help.lbi";i:4;s:52:"F:/wamp/www/99gui/themes/red_two/library/history.lbi";i:5;s:53:"F:/wamp/www/99gui/themes/red_two/library/comments.lbi";i:6;s:56:"F:/wamp/www/99gui/themes/red_two/library/page_footer.lbi";}s:7:"expires";i:1400561244;s:8:"maketime";i:1400557644;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:7:{i:0;s:44:"F:/wamp/www/99gui/themes/red_two/article.dwt";i:1;s:57:"F:/wamp/www/99gui/themes/red_two/library/page_header1.lbi";i:2;s:52:"F:/wamp/www/99gui/themes/red_two/library/ur_here.lbi";i:3;s:54:"F:/wamp/www/99gui/themes/red_two/library/left_help.lbi";i:4;s:52:"F:/wamp/www/99gui/themes/red_two/library/history.lbi";i:5;s:53:"F:/wamp/www/99gui/themes/red_two/library/comments.lbi";i:6;s:56:"F:/wamp/www/99gui/themes/red_two/library/page_footer.lbi";}s:7:"expires";i:1400581974;s:8:"maketime";i:1400578374;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -87,12 +87,15 @@ function checkSearchForm()
 	<div class="sitewith">
 		<div class="fl"><a href="index.php"><img src="themes/red_two/images/logo1.jpg" height="70px;" /></a></div>
 		
-		<form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
-		<div class="topsearch fl">
-			<input class="search_input_text" type="text" maxlength="100" style="color:#333333;" name="keywords" id="keyword" value="" >
-			<div class="searchbtn fr" id="search_input_btn">搜索</div>
-		</div>
-		</form>
+         <div class="hd_head_searchss fl">
+                <form name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
+                  <input type="text" maxlength="100" style="color:#333333;" name="keywords" id="keyword" class="hd_input_test"  value="" >
+                  
+                  <input class="hd_search_btn" type="submit" style="width:98px" value="搜 索" >
+                  </input>
+                </form>
+          </div>
+      
 		
 		<div class="fr"><img src="themes/red_two/images/logo3.jpg" height="70px;" /></div>
 	</div>
@@ -100,7 +103,6 @@ function checkSearchForm()
 <div class="wrap nav_wrap">
 	<div class="sitewith top-navicat">
 		<ul class="nav-menu-list">
-			<li class="category_li"></li>
 			<li><a href="index.php">首页</a></li>
 						<li><a href="category-2-b0.html"   >价格</a></li>
 						<li><a href="search-promotion.html"   >限时抢购</a></li>

@@ -3,7 +3,7 @@
 <style type="text/css"> 
 .container, .container *{margin:0; padding:0;}
 
-.container{width:1200px; height:400px; overflow:hidden;position:relative;}
+.container{width:1200px; height:400px; overflow:hidden;position: absolute;}
 
 .slider{position:absolute;}
 .slider li{ list-style:none;display:inline;}
@@ -100,9 +100,7 @@ TransformView.prototype = {
 	this.onStart = this.options.onStart;
 	this.onFinish = this.options.onFinish;
 	
-	oContainer.style.overflow = "hidden";
-	oContainer.style.position = "relative";
-	
+
 	oSlider.style.position = "absolute";
 	oSlider.style.top = oSlider.style.left = 0;
   },

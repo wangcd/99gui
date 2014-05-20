@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:9:{i:0;s:50:"F:/wamp/www/99gui/themes/red_two/exchange_list.dwt";i:1;s:56:"F:/wamp/www/99gui/themes/red_two/library/page_header.lbi";i:2;s:58:"F:/wamp/www/99gui/themes/red_two/library/category_tree.lbi";i:3;s:52:"F:/wamp/www/99gui/themes/red_two/library/history.lbi";i:4;s:55:"F:/wamp/www/99gui/themes/red_two/library/ur_here_rs.lbi";i:5;s:57:"F:/wamp/www/99gui/themes/red_two/library/exchange_hot.lbi";i:6;s:58:"F:/wamp/www/99gui/themes/red_two/library/exchange_list.lbi";i:7;s:50:"F:/wamp/www/99gui/themes/red_two/library/pages.lbi";i:8;s:56:"F:/wamp/www/99gui/themes/red_two/library/page_footer.lbi";}s:7:"expires";i:1400561429;s:8:"maketime";i:1400557829;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:9:{i:0;s:50:"F:/wamp/www/99gui/themes/red_two/exchange_list.dwt";i:1;s:57:"F:/wamp/www/99gui/themes/red_two/library/page_header1.lbi";i:2;s:58:"F:/wamp/www/99gui/themes/red_two/library/category_tree.lbi";i:3;s:52:"F:/wamp/www/99gui/themes/red_two/library/history.lbi";i:4;s:55:"F:/wamp/www/99gui/themes/red_two/library/ur_here_rs.lbi";i:5;s:57:"F:/wamp/www/99gui/themes/red_two/library/exchange_hot.lbi";i:6;s:58:"F:/wamp/www/99gui/themes/red_two/library/exchange_list.lbi";i:7;s:50:"F:/wamp/www/99gui/themes/red_two/library/pages.lbi";i:8;s:56:"F:/wamp/www/99gui/themes/red_two/library/page_footer.lbi";}s:7:"expires";i:1400581972;s:8:"maketime";i:1400578372;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -87,12 +87,15 @@ function checkSearchForm()
 	<div class="sitewith">
 		<div class="fl"><a href="index.php"><img src="themes/red_two/images/logo1.jpg" height="70px;" /></a></div>
 		
-		<form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
-		<div class="topsearch fl">
-			<input class="search_input_text" type="text" maxlength="100" style="color:#333333;" name="keywords" id="keyword" value="" >
-			<div class="searchbtn fr" id="search_input_btn">搜索</div>
-		</div>
-		</form>
+         <div class="hd_head_searchss fl">
+                <form name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
+                  <input type="text" maxlength="100" style="color:#333333;" name="keywords" id="keyword" class="hd_input_test"  value="" >
+                  
+                  <input class="hd_search_btn" type="submit" style="width:98px" value="搜 索" >
+                  </input>
+                </form>
+          </div>
+      
 		
 		<div class="fr"><img src="themes/red_two/images/logo3.jpg" height="70px;" /></div>
 	</div>
@@ -100,7 +103,6 @@ function checkSearchForm()
 <div class="wrap nav_wrap">
 	<div class="sitewith top-navicat">
 		<ul class="nav-menu-list">
-			<li class="category_li"></li>
 			<li><a href="index.php">首页</a></li>
 						<li><a href="category-2-b0.html"   >价格</a></li>
 						<li><a href="search-promotion.html"   >限时抢购</a></li>
@@ -117,53 +119,158 @@ function checkSearchForm()
   <div class="AreaL">
     
   
-     
-			
-			<ul class="catetree-list" style="margin-left: 6px;">
-				<li>
-					<h3><span>&gt;</span><a href="category-1-b0.html" target="_blank">白酒</a></h3>
-					<p><a href="category-1-b4.html" target="_blank">茅台</a><a href="category-1-b44.html" target="_blank">五粮液</a><a target="_blank" href="category-1-b23.html">汾酒</a><a target="_blank" href="category-1-b7.html">泸州老窖</a></p>
-					<p><a href="category-1-b0-min0-max0-attr47.0.0.html" target="_blank">酱香型</a><a href="category-1-b0-min0-max0-attr59.0.0.html" target="_blank">浓香型</a><a href="category-1-b0-min0-max0-attr0.46.0.html" target="_blank">贵州</a><a href="category-1-b0-min0-max0-attr0.55.0.html" target="_blank">四川</a></p>
-				</li>
-				
-				<li>
-					<h3><span>&gt;</span><a href="category-2-b0.html" target="_blank">葡萄酒</a></h3>
-					<p><a href="category-2-b0-min0-max0-attr204.html" target="_blank">法国</a><a href="category-2-b0.html" target="_blank">德国</a><a href="category-2-b0-min0-max0-attr237.html" target="_blank">意大利</a><a href="category-2-b0-min0-max0-attr248.html" target="_blank">西班牙</a></p>
-					<p><a href="category-2-b0.html" target="_blank">赤霞珠</a><a href="category-2-b0.html" target="_blank">西拉</a><a href="category-2-b0.html" target="_blank">霞多丽</a></p>
-				</li>
-				
-				<li>
-					<h3><span>&gt;</span><a href="category-3-b0.html" target="_blank">洋酒</a></h3>
-					<p><a href="category-3-b0-min0-max0-attr0.386.html" target="_blank">白兰地</a><a href="category-3-b0-min0-max0-attr0.348.html" target="_blank">威士忌</a><a href="category-3-b0-min0-max0-attr0.326.html" target="_blank">伏特加</a><a href="category-3-b0-min0-max0-attr0.434.html" target="_blank">金酒</a></p>
-					<p><a href="category-3-b0.html" target="_blank">人头马</a><a href="category-3-b0.html" target="_blank">芝华士</a><a href="category-3-b0.html" target="_blank">马爹利</a><a href="category-3-b0.html" target="_blank">深蓝</a></p>
-				</li>
-				
-				<li>
-					<h3><span>&gt;</span><a href="category-4-b0.html" target="_blank">啤酒</a></h3>
-					<p><a href="category-4-b45.html" target="_blank">斯图加特</a><a href="category-4-b35.html" target="_blank">黑森马蹄</a><a href="category-4-b33.html" target="_blank">喜力</a><a href="category-4-b34.html" target="_blank">雪夫</a></p>
-					<p><a href="category-4-b1.html" target="_blank">青岛啤酒</a><a href="category-4-b27.html" target="_blank">百威</a><a href="category-4-b0-min0-max0-attr457.html" target="_blank">德国</a></p>
-				</li>
-				
-				<li>
-					<h3><span>&gt;</span><a href="category-5-b0.html" target="_blank">酒具</a></h3>
-					<p><a href="category-5-b0.html" target="_blank">酒柜</a><a href="category-5-b0.html" target="_blank">酒器</a></p>
-				</li>
-			</ul>
-			
-<script type="text/javascript">
-	$(function($) {
-		$(".catetree-list li").hover(
-			function(){
-				$(this).addClass("current");
-			},
-			function(){
-				$(this).removeClass("current");
-			}
-		);
-	});
-</script>
+    <div id="category_tree">
+  <div class="tit">所有商品分类</div>
+  <img src="themes/red_two/images/btn_unfold.gif" style="display:none;">
+	  <dl class="clearfix" >
+		   <div class="box1 cate" id="cate">
+						<h1 onclick="tab(0)"  		
+                                style="border-top:none"
+                 	>		 		
+                <span class="f_l">
+                <img src="themes/red_two/images/btn_fold.gif" style="padding-top:10px;padding-right:6px;cursor:pointer;">
+                </span>
+                <a href="category-1-b0.html" class="  f_l">国家</a>
+			</h1>
+			<ul style="display:none" >
+                                 <a class="over_2" href="category-13-b0.html">法国</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-14-b0.html">意大利</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-15-b0.html">德国</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-16-b0.html">西班牙</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-17-b0.html">匈牙利</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-18-b0.html">加拿大</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-19-b0.html">俄罗斯</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-20-b0.html">澳大利亚</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-21-b0.html">智利</a>  
+                <div class="clearfix">
+                                </div>   
+                			</ul>
+			<div style="clear:both"></div>
+						<h1 onclick="tab(1)"  		
+                 	>		 		
+                <span class="f_l">
+                <img src="themes/red_two/images/btn_fold.gif" style="padding-top:10px;padding-right:6px;cursor:pointer;">
+                </span>
+                <a href="category-2-b0.html" class="  f_l">价格</a>
+			</h1>
+			<ul style="display:none" >
+                                 <a class="over_2" href="category-22-b0.html">0-50元</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-23-b0.html">51-100元</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-24-b0.html">101-150元</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-25-b0.html">151-200元</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-26-b0.html">200-400元</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-27-b0.html">440元以上</a>  
+                <div class="clearfix">
+                                </div>   
+                			</ul>
+			<div style="clear:both"></div>
+						<h1 onclick="tab(2)"  		
+                 	>		 		
+                <span class="f_l">
+                <img src="themes/red_two/images/btn_fold.gif" style="padding-top:10px;padding-right:6px;cursor:pointer;">
+                </span>
+                <a href="category-3-b0.html" class="  f_l">种类</a>
+			</h1>
+			<ul style="display:none" >
+                                 <a class="over_2" href="category-6-b0.html">红葡萄酒</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-7-b0.html">白葡萄酒</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-8-b0.html">香槟起泡酒</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-9-b0.html">冰酒</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-10-b0.html">浆果酒</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-11-b0.html">啤酒</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-12-b0.html">伏特加</a>  
+                <div class="clearfix">
+                                </div>   
+                			</ul>
+			<div style="clear:both"></div>
+						<h1 onclick="tab(3)"  		
+                 	>		 		
+                <span class="f_l">
+                <img src="themes/red_two/images/btn_fold.gif" style="padding-top:10px;padding-right:6px;cursor:pointer;">
+                </span>
+                <a href="category-5-b0.html" class="  f_l">酒具</a>
+			</h1>
+			<ul style="display:none" >
+                                 <a class="over_2" href="category-28-b0.html">启瓶器</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-29-b0.html">红酒杯</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-30-b0.html">香槟杯</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-31-b0.html">烈酒杯</a>  
+                <div class="clearfix">
+                                </div>   
+                                 <a class="over_2" href="category-32-b0.html">醒酒器</a>  
+                <div class="clearfix">
+                                </div>   
+                			</ul>
+			<div style="clear:both"></div>
+			 
+			</div>
+		</dl>
+</div>
 <div class="blank"></div>
-  
+ 
+<script type="text/javascript">
+obj_h4 = document.getElementById("cate").getElementsByTagName("h4")
+obj_ul = document.getElementById("cate").getElementsByTagName("ul")
+obj_img = document.getElementById("cate").getElementsByTagName("img")
+function tab(id)
+{ 
+		if(obj_ul.item(id).style.display == "none")
+		{
+			obj_ul.item(id).style.display = " block"
+			obj_img.item(id).src = "themes/red_two/images/btn_unfold.gif"
+			return false;
+		}
+		else(obj_ul.item(id).style.display == "block")
+		{
+			obj_ul.item(id).style.display = "none"
+			obj_img.item(id).src = "themes/red_two/images/btn_fold.gif"
+		}
+}
+</script>  
     <div class="box" id='history_div'> <div class="box_1">
  <h3><span>浏览历史</span></h3>
  

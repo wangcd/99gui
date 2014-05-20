@@ -15,16 +15,15 @@
 <?php echo $this->smarty_insert_scripts(array('files'=>'jquery-1.8.3.min.js,jquery.json-2.4.min.js,utils.js,common.js,global.js,compare.js')); ?>
 </head>
 <body>
-<?php echo $this->fetch('library/page_header.lbi'); ?>
+<?php echo $this->fetch('library/page_header1.lbi'); ?>
 <div class="block clearfix">
   
   <div class="AreaL">
     
- 
-    <?php echo $this->fetch('library/category_tree.lbi'); ?>
+<?php echo $this->fetch('library/category_tree.lbi'); ?>
+
     
-    
-    
+
     
     <?php echo $this->fetch('library/history.lbi'); ?>
   </div>

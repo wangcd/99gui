@@ -15,7 +15,7 @@
 <?php echo $this->smarty_insert_scripts(array('files'=>'common.js')); ?>
 </head>
 <body>
-<?php echo $this->fetch('library/page_header.lbi'); ?>
+<?php echo $this->fetch('library/page_header1.lbi'); ?>
 
   <?php echo $this->fetch('library/ur_here.lbi'); ?>
 <div class="block clearfix">

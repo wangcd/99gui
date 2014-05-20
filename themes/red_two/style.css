@@ -135,7 +135,7 @@ color: #E60012; font-weight:bold }
   .blank{height:15px; line-height:15px; clear:both; visibility:hidden;}
   .blank5{height:5px; line-height:5px;/* _margin:-3px 0;e c m o b a n*/ clear:both; visibility:hidden;}
   /*布局*/
-  .AreaL{width:216px; float:left; }
+  .AreaL{width:216px; float:left; margin-top:10px;}
   
   .index_page .AreaL{ position:relative;  margin-top:-35px; z-index:99999}
   
@@ -1946,11 +1946,70 @@ opacity: 0.7;
 	.toptel {background: url(images/common_bg.gif) 0 -152px no-repeat; padding-left: 14px;height: 17px;line-height: 17px;overflow: hidden;margin:5px 10px 0 0;}
 	.toptelstyle {color: #C00;font-family: Arial, Helvetica, sans-serif;font-size: 14px;font-style: italic}
 
-.topmain_wrap {height: 78px; padding: 20px 0; background: #fff}
-	.topsearch {background: url(images/search.jpg);width: 464px; height: 42px; margin: 15px 0 0 30px;}
-		.search_input_text {border: none;outline: none;font-size:13px;margin:10px 0 0 30px;height:22px;width:320px;}
-		.search_input_btn {border: none;outline: none;color:#fff;width:150px;/*background:none;*/}
-	.searchbtn {color:#fff; font-size:18px; padding: 10px 40px 0 0; font-weight: bold;cursor: pointer;}
+.topmain_wrap {height: 70px; padding: 15px 0; background: #fff}
+/*	.topsearch {background: url(images/search.jpg);width: 464px; height: 42px; margin: 15px 0 0 30px;}*/
+
+
+/*表单*/
+.hd_head_searchss{
+	margin-top:20px;
+	margin-left:30px;
+	border:2px solid #E60012
+}
+form{
+	border: medium none;
+	list-style-type: none;
+}
+.hd_head_searchss input {
+    padding: 0px 6px 0px 32px;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+    background: url('images/indexhead_sprite.png') no-repeat scroll -279px -20px transparent;
+    height: 32px;
+    width: 388px;
+    border: 0px none;
+    color: #333;
+    vertical-align: middle;
+    float: left;
+    outline: medium none;
+}
+.hd_head_searchss .hd_search_btn {
+    float: left;
+    background: none repeat scroll 0% 0% #E60012;
+    width: 98px;
+    height: 32px;
+    line-height: 32px;
+    border: 0px none;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    color: #FFF;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0px;
+    position: static;
+}
+.hd_head_searchss .hd_hot_search {
+    line-height: 24px;
+    color: #999;
+    height: 24px;
+    width: 438px;
+    overflow: hidden;
+}
+.hd_head_search .hd_hot_search span {
+    float: left;
+}
+.hd_head_search .hd_hot_search a {
+    float: left;
+    color: #999;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+		/*.search_input_text {border: none;outline: none;font-size:13px;margin:10px 0 0 30px;height:22px;width:320px;}*/
+		/*.search_input_btn {border: none;outline: none;color:#fff;width:150px;background:none;}./*/
+	/*.searchbtn {color:#fff; font-size:18px; padding: 10px 40px 0 0; font-weight: bold;cursor: pointer;}*/
 
 .nav_wrap {height: 35px; background: #b31d06; }
 	.top-navicat {position: relative;}
@@ -1985,7 +2044,7 @@ opacity: 0.7;
 				.catetree-list li h3 span {width: 18px;font-weight: 500;font-size: 12px;float: right;font-family: "新宋体";}
 			.catetree-list li p {clear: both; margin: 8px auto; width: 180px; overflow: hidden;}
 				.catetree-list li p a {padding: 0 4px;}
-	.idxban-right {width: 992px; margin-top:-1px;}
+	.idxban-right {width: 1200px; margin-top:-1px;}
 	@-moz-document url-prefix(){.idxban-right {margin-top:-1px;}}
 
 
@@ -2121,4 +2180,129 @@ opacity: 0.7;
 	border-left:1px solid #fff;
 	border-right:1px solid #fff;
 	color:#D95B44;
+}
+/*文章分类列表*/
+.bor{
+	border:1px solid;
+}
+.fl{
+	float:left;
+}
+a{
+	text-decoration:none;
+	color:#555555;
+}
+.show_article_list{
+	margin:auto;
+	width:1200px;
+	margin-top:10px;
+}
+.article_list_bg{
+	width:1200px;
+	height:36px;
+	background:url(images/act_bg.png) no-repeat;
+}
+.inde_pzdd_more{
+	text-align:right;
+	width:50px;
+	height:36px;
+	font-size:12px;
+	margin-left:335px;
+	line-height:36px;
+	display:inline;
+	float:left;
+}
+.inde_pzdd_more a{
+	color:#FFF;
+	text-decoration:none;
+}
+.article_list_content{
+	width:1198px;
+	height:220px;
+	border-right-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-right-color:#e6e6e6;
+	border-bottom-color:#e6e6e6;
+	border-left-color:#e6e6e6;
+}
+.article_list_main{
+	width:375px;
+	padding-left:20px;
+}
+.article_list_main p{
+	font-size:12px;
+	height:30px;
+	width:360px;
+	line-height:29px;
+	border-bottom:1px dashed #cccccc;
+}
+.article_list_main p span{
+	float:right;
+	color:#adacac;
+}
+/*组合搜索*/
+a{
+	text-decoration:none;
+	color:#000;
+}
+*{
+	font-size:12px;
+}
+.search_list{
+	width:960px;
+	border-left:1px solid #AAAAAA;
+	border-right:1px solid #AAAAAA;
+	border-bottom:1px solid #AAAAAA;
+	border-top:2px solid #A30000;
+	padding-bottom:10px;
+	background:#FFF;
+}
+.search_title{
+	padding-left:20px;
+	padding-right:20px;
+	margin-bottom:15px;
+	height:30px;
+	line-height:30px;
+	background:none repeat scroll 0 0 #F7F7F7;
+}
+.search_title span{
+	font-size:18px;
+	color:#F00;
+}
+.search_title a{
+	background:url(images/chongx.png) no-repeat;
+	float:right;
+}
+.search_con_list{
+	width:920px;
+	height:50px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:5px;
+	border-bottom:1px dashed #cccccc;
+}
+.fenl{
+	width:150px;
+	font-size:16px;
+	float:left;
+}
+.fenl_list{
+	width:720px;
+	height:50px;
+	float:left;
+}
+.fenl_list div{
+	width:120px;
+	height:25px;
+	line-height:25px;
+	float:left;
+}
+.fenl_list_fir{
+	padding:2px;
+	color:#F00;
+	border:1px solid #F00;
 }

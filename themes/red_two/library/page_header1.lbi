@@ -98,7 +98,6 @@ function checkSearchForm()
 <div class="wrap nav_wrap">
 	<div class="sitewith top-navicat">
 		<ul class="nav-menu-list">
-			<li class="category_li"></li>
 			<li><a href="../index.php">{$lang.home}</a></li>
 			<!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
 			<li><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} class="nav-a-curt"{/if} >{$nav.name}</a></li>
